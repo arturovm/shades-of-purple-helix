@@ -1,45 +1,46 @@
 # Editor and UI
 
-"ui.background" = {bg = "background"}
+"ui.background"           = {bg = "background"}
 "ui.background.separator" = "background_dark"
 
-"ui.text" = {fg = "#FFFFFF"}
-"ui.text.inactive" = "foreground"
-"ui.text.info" = {fg = "#A599E9"}
-"ui.text.focus" = {bg = "background_dark", modifiers = ["bold"]}
+"ui.text"           = {fg = "#E1EFFF"}
+"ui.text.inactive"  = "#AAAAAA"
+"ui.text.info"      = {fg = "#A599E9"}
+"ui.text.focus"     = {bg = "background_dark", fg = "#FFFFFF"}
+"ui.text.directory" = {fg = "#AAAAAA"}
 
-"ui.cursor" = {bg = "contrast_lite", fg = "hover_background"}
+"ui.cursor"        = {bg = "contrast_lite", fg = "hover_background"}
 "ui.cursor.normal" = {bg = "contrast_lite", fg = "hover_background"}
 "ui.cursor.insert" = {bg = "contrast_lite", fg = "hover_background"}
 "ui.cursor.select" = {bg = "contrast_lite", fg = "hover_background"}
 
 "ui.cursor.match" = {bg = "contrast_lite_ii", fg = "hover_background"}
 
-"ui.cursor.primary" = {bg = "contrast", fg = "background"}
+"ui.cursor.primary"        = {bg = "contrast", fg = "background"}
 "ui.cursor.primary.normal" = {bg = "contrast", fg = "background"}
 "ui.cursor.primary.insert" = {bg = "contrast", fg = "background"}
 "ui.cursor.primary.select" = {bg = "contrast", fg = "background"}
 
-"ui.selection" = {bg = "#7E46DF46", fg = "contrast"}
+"ui.selection"         = {bg = "#7E46DF46", fg = "contrast"}
 "ui.selection.primary" = {bg = "comments", fg = "contrast_lite"}
 
 "ui.cursorline.primary" = {bg = "#1F1F41"}
 
 "ui.cursorcolumn.primary" = {bg = "#1F1F41"}
 
-"ui.gutter" = {bg = "#28284E"}
+"ui.gutter"          = {bg = "#28284E"}
 "ui.gutter.selected" = {bg = "#1F1F41"}
 
-"ui.linenr" = "foreground"
+"ui.linenr"          = "foreground"
 "ui.linenr.selected" = "foreground"
 
-"ui.statusline" = {bg = "background_dark", fg = "#FFFFFF"}
+"ui.statusline"           = {bg = "background_dark", fg = "#FFFFFF"}
 "ui.statusline.separator" = {fg = "#1F1F41"}
-"ui.statusline.inactive" = {bg = "background_dark", fg = "foreground"}
+"ui.statusline.inactive"  = {bg = "background_dark", fg = "foreground"}
 
-"ui.bufferline" = {bg = "background", fg = "foreground"}
-"ui.bufferline.active" = {bg = "#222244", fg = "#FFFFFF"}
-"ui.bufferline.background" = "background"
+"ui.bufferline"            = {bg = "background", fg = "foreground"}
+"ui.bufferline.active"     = {bg = "#222244", fg = "#FFFFFF"}
+"ui.bufferline.background" = {bg = "background"}
 
 ## Pop-ups that show docs
 
@@ -47,8 +48,8 @@
 
 ## Pickers
 
-"ui.picker.header" = "background_dark"
-"ui.picker.header.column" = {fg = "foreground"}
+"ui.picker.header"               = {bg = "background_dark"}
+"ui.picker.header.column"        = {fg = "foreground"}
 "ui.picker.header.column.active" = {fg = "contrast", underline = {color = "contrast", style = "line"}}
 
 ## Windows (split screens)
@@ -61,27 +62,93 @@
 
 ## Auto-complete
 
-"ui.menu" = {bg = "#1F1F41", fg = "foreground"}
+"ui.menu"          = {bg = "#1F1F41", fg = "foreground"}
 "ui.menu.selected" = {bg = "background", fg = "contrast"}
-"ui.menu.scroll" = {bg = "#1F1F41", fg = "foreground"}
+"ui.menu.scroll"   = {bg = "#1F1F41", fg = "foreground"}
 
-"ui.virtual.ruler" = "#A599E91C"
-"ui.virtual.indent-guide" = "#A599E90F"
+"ui.virtual.ruler"        = {bg = "#484373"}
+"ui.virtual.indent-guide" = "#605990"
+"ui.virtual.inlay-hint"   = "foreground"
+"ui.virtual.whitespace"   = "#636377"
+"ui.virtual.wrap"         = "foreground"
+"ui.virtual.jump-label"   = "foreground"
+
+# Various states
+
+"error"                  = "#E43938"
+"warning"                = "contrast"
+"diagnostic"             = { underline = { style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated"  = { modifiers = ["crossed_out"] }
+"diagnostic.error"       = { underline = { color = "#E53938", style = "curl" } }
+"diagnostic.warning"     = { underline = { color = "contrast", style = "curl" } }
 
 # Syntax
 
-"attribute" = {fg = "other", modifiers = ["italic"]}
-"type" = "definitions"
+"attribute" = { fg = "contrast", modifiers = ["italic"] }
+
+"type"              = "#80FFBB"
+"type.builtin"      = "keywords"
+"type.enum"         = "#80FFBB"
+"type.enum.variant" = "constants"
+
+"constructor" = "contrast"
+
 "constant" = "constants"
-"string" = "strings"
-"comment" = {fg = "comments", modifiers = ["italic"]}
-"variable" = "#E1EFFF"
-"variable.builtin" = {fg = "#E1EFFF", modifiers = ["italic"]}
-"keyword" = "keywords"
-"keyword.function" = "definitions"
-"keyword.storage" = "contrast"
-"keyword.storage.modifier" = {fg = "keywords", modifiers = ["italic"]}
-"function" = "contrast"
+
+"string"                = "strings"
+"string.regexp"         = "#E1EFFF"
+"string.special.url"    = { fg = "foreground", modifiers = ["underlined"] }
+"string.special.symbol" = "constants"
+
+"comment" = { fg = "comments", modifiers = ["italic"] }
+
+"variable"              = "#E1EFFF"
+"variable.builtin"      = { fg = "definitions", modifiers = ["italic"] } 
+"variable.parameter"    = "other"
+"variable.other.member" = "contrast_lite"
+
+"label" = "contrast"
+
+"punctuation"         = "#E1EFFF"
+"punctuation.special" = "contrast_lite"
+
+"keyword"                  = "keywords"
+"keyword.storage"          = "keywords"
+"keyword.function"         = "definitions"
+"keyword.storage.modifier" = { fg = "keywords", modifiers = ["italic"] }
+
+"operator"                 = "keywords"
+
+"function"                 = "contrast"
+"function.builtin"         = "keywords"
+
+"tag"                      = "other"
+
+"namespace"                = "contrast"
+
+"special"                  = "other"
+
+"markup.heading"        = { fg = "contrast", modifiers = ["bold"] }
+"markup.heading.marker" = "#494685"
+"markup.list"           = "contrast"
+"markup.bold"           = { modifiers = ["bold"] }
+"markup.italic"         = { modifiers = ["italic"] }
+"markup.underline"      = { modifiers = ["underlined"] }
+"markup.link.url"       = { fg = "foreground", modifiers = ["underlined"] }
+"markup.link.label"     = "foreground"
+"markup.link.text"      = { fg = "contrast", modifiers = ["underlined"] }
+"markup.quote"          = "foreground"
+"markup.raw"            = "foreground"
+"markup.raw.block"      = "#FFFFFF"
+
+"diff.plus"         = "#8EFA00"
+"diff.plus.gutter"  = "#35AD68"
+"diff.minus"        = "#F16E6B"
+"diff.minus.gutter" = "#E43938"
+"diff.delta.gutter" = "#723F91"
+
+"embedded"                 = "other"
 
 [palette]
 
