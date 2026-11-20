@@ -3,26 +3,26 @@
 "ui.background"           = {bg = "background"}
 "ui.background.separator" = "background_dark"
 
-"ui.text"           = {fg = "#E1EFFF"}
-"ui.text.inactive"  = "#AAAAAA"
+"ui.text"           = {fg = "#FFFFFF"}
+"ui.text.inactive"  = "foreground"
 "ui.text.info"      = {fg = "#A599E9"}
-"ui.text.focus"     = {bg = "background_dark", fg = "#FFFFFF"}
+"ui.text.focus"     = {bg = "#1F1F41", fg = "#FFFFFF"}
 "ui.text.directory" = {fg = "#AAAAAA"}
 
-"ui.cursor"        = {bg = "contrast_lite", fg = "hover_background"}
-"ui.cursor.normal" = {bg = "contrast_lite", fg = "hover_background"}
-"ui.cursor.insert" = {bg = "contrast_lite", fg = "hover_background"}
-"ui.cursor.select" = {bg = "contrast_lite", fg = "hover_background"}
+"ui.cursor"        = {bg = "contrast_lite", fg = "#494685"}
+"ui.cursor.normal" = {bg = "contrast_lite", fg = "#494685"}
+"ui.cursor.insert" = {bg = "contrast_lite", fg = "#494685"}
+"ui.cursor.select" = {bg = "contrast_lite", fg = "#494685"}
 
-"ui.cursor.match" = {bg = "contrast_lite_ii", fg = "hover_background"}
+"ui.cursor.match" = {bg = "#503E83"}
 
 "ui.cursor.primary"        = {bg = "contrast", fg = "background"}
 "ui.cursor.primary.normal" = {bg = "contrast", fg = "background"}
 "ui.cursor.primary.insert" = {bg = "contrast", fg = "background"}
 "ui.cursor.primary.select" = {bg = "contrast", fg = "background"}
 
-"ui.selection"         = {bg = "#7E46DF46", fg = "contrast"}
-"ui.selection.primary" = {bg = "comments", fg = "contrast_lite"}
+"ui.selection"         = {bg = "#4E348E"}
+"ui.selection.primary" = {bg = "#7448B0"}
 
 "ui.cursorline.primary" = {bg = "#1F1F41"}
 
@@ -73,15 +73,17 @@
 "ui.virtual.wrap"         = "foreground"
 "ui.virtual.jump-label"   = "foreground"
 
-# Various states
+## Various states
 
-"error"                  = "#E43938"
+"error"                  = "#E83938"
 "warning"                = "contrast"
-"diagnostic"             = { underline = { style = "curl" } }
-"diagnostic.unnecessary" = { modifiers = ["dim"] }
-"diagnostic.deprecated"  = { modifiers = ["crossed_out"] }
-"diagnostic.error"       = { underline = { color = "#E53938", style = "curl" } }
-"diagnostic.warning"     = { underline = { color = "contrast", style = "curl" } }
+"diagnostic"             = {underline = {style = "curl" }}
+"diagnostic.unnecessary" = {modifiers = ["dim"]}
+"diagnostic.deprecated"  = {modifiers = ["crossed_out"]}
+"diagnostic.error"       = {underline = {color = "#E83939", style = "curl" }}
+"diagnostic.warning"     = {underline = {color = "contrast", style = "curl"}}
+
+"tabstop" = {bg = "#4B36B1"}
 
 # Syntax
 
@@ -145,10 +147,10 @@
 "diff.plus"         = "#8EFA00"
 "diff.plus.gutter"  = "#35AD68"
 "diff.minus"        = "#F16E6B"
-"diff.minus.gutter" = "#E43938"
-"diff.delta.gutter" = "#723F91"
+"diff.minus.gutter" = "#E83938"
+"diff.delta.gutter" = "#65459A"
 
-"embedded"                 = "other"
+"embedded" = "other"
 
 [palette]
 
