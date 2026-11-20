@@ -1,0 +1,105 @@
+# Editor and UI
+
+"ui.background" = {bg = "background"}
+"ui.background.separator" = "background_dark"
+
+"ui.text" = {fg = "#FFFFFF"}
+"ui.text.inactive" = "foreground"
+"ui.text.info" = {fg = "#A599E9"}
+"ui.text.focus" = {bg = "background_dark", modifiers = ["bold"]}
+
+"ui.cursor" = {bg = "contrast_lite", fg = "hover_background"}
+"ui.cursor.normal" = {bg = "contrast_lite", fg = "hover_background"}
+"ui.cursor.insert" = {bg = "contrast_lite", fg = "hover_background"}
+"ui.cursor.select" = {bg = "contrast_lite", fg = "hover_background"}
+
+"ui.cursor.match" = {bg = "contrast_lite_ii", fg = "hover_background"}
+
+"ui.cursor.primary" = {bg = "contrast", fg = "background"}
+"ui.cursor.primary.normal" = {bg = "contrast", fg = "background"}
+"ui.cursor.primary.insert" = {bg = "contrast", fg = "background"}
+"ui.cursor.primary.select" = {bg = "contrast", fg = "background"}
+
+"ui.selection" = {bg = "#7E46DF46", fg = "contrast"}
+"ui.selection.primary" = {bg = "comments", fg = "contrast_lite"}
+
+"ui.cursorline.primary" = {bg = "#1F1F41"}
+
+"ui.cursorcolumn.primary" = {bg = "#1F1F41"}
+
+"ui.gutter" = {bg = "#28284E"}
+"ui.gutter.selected" = {bg = "#1F1F41"}
+
+"ui.linenr" = "foreground"
+"ui.linenr.selected" = "foreground"
+
+"ui.statusline" = {bg = "background_dark", fg = "#FFFFFF"}
+"ui.statusline.separator" = {fg = "#1F1F41"}
+"ui.statusline.inactive" = {bg = "background_dark", fg = "foreground"}
+
+"ui.bufferline" = {bg = "background", fg = "foreground"}
+"ui.bufferline.active" = {bg = "#222244", fg = "#FFFFFF"}
+"ui.bufferline.background" = "background"
+
+## Pop-ups that show docs
+
+"ui.popup" = {bg = "#161633", fg = "foreground"}
+
+## Pickers
+
+"ui.picker.header" = "background_dark"
+"ui.picker.header.column" = {fg = "foreground"}
+"ui.picker.header.column.active" = {fg = "contrast", underline = {color = "contrast", style = "line"}}
+
+## Windows (split screens)
+
+"ui.window" = {fg = "#222244"}
+
+## Command help at the bottom
+
+"ui.help" = {bg = "#222244", fg = "foreground"}
+
+## Auto-complete
+
+"ui.menu" = {bg = "#1F1F41", fg = "foreground"}
+"ui.menu.selected" = {bg = "background", fg = "contrast"}
+"ui.menu.scroll" = {bg = "#1F1F41", fg = "foreground"}
+
+"ui.virtual.ruler" = "#A599E91C"
+"ui.virtual.indent-guide" = "#A599E90F"
+
+# Syntax
+
+"attribute" = {fg = "other", modifiers = ["italic"]}
+"type" = "definitions"
+"constant" = "constants"
+"string" = "strings"
+"comment" = {fg = "comments", modifiers = ["italic"]}
+"variable" = "#E1EFFF"
+"variable.builtin" = {fg = "#E1EFFF", modifiers = ["italic"]}
+"keyword" = "keywords"
+"keyword.function" = "definitions"
+"keyword.storage" = "contrast"
+"keyword.storage.modifier" = {fg = "keywords", modifiers = ["italic"]}
+"function" = "contrast"
+
+[palette]
+
+background       = "#2D2B55"
+background_dark  = "#1E1E3F"
+foreground       = "#A599E9"
+hover_background = "#4D21FC"
+contrast         = "#FAD000"
+contrast_lite    = "#FFEE80"
+contrast_lite_ii = "#FAEFA5"
+highlight        = "#FF7200"
+comments         = "#B362FF"
+constants        = "#FF628C"
+keywords         = "#FF9D00"
+other            = "#9EFFFF"
+strings          = "#A5FF90"
+templates        = "#3AD900"
+definitions      = "#FB94FF"
+invalid          = "#EC3A37F5"
+diff_added       = "#00FF009A"
+diff_removed     = "#FF000D81"
