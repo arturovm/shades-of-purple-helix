@@ -22,7 +22,7 @@
 "ui.cursor.primary.select" = {bg = "contrast", fg = "background"}
 
 "ui.selection"         = {bg = "#4E348E"}
-"ui.selection.primary" = {bg = "#7448B0"}
+"ui.selection.primary" = {bg = "#8A4EC8"}
 
 "ui.cursorline.primary" = {bg = "#1F1F41"}
 
@@ -64,7 +64,7 @@
 
 "ui.menu"          = {bg = "#1F1F41", fg = "foreground"}
 "ui.menu.selected" = {bg = "background", fg = "contrast"}
-"ui.menu.scroll"   = {bg = "#1F1F41", fg = "foreground"}
+"ui.menu.scroll"   = {bg = "#7B72B1", fg = "foreground"}
 
 "ui.virtual.ruler"        = {bg = "#484373"}
 "ui.virtual.indent-guide" = "#605990"
